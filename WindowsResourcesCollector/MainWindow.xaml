@@ -12,15 +12,15 @@
             <StackPanel Orientation="Vertical">
                 <Image Source="{Binding Path=ImagePath}" Height="{Binding Path=ThumbHeight}" Width="{Binding Path=ThumbWidth}"></Image>
                 <StackPanel Orientation="Horizontal">
-                    <Label>Orientation:</Label>
+                    <Label FontWeight="Bold">Orientation</Label>
                     <Label Content="{Binding Path=ImageOrientation}"></Label>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label FontWeight="Bold">Resolution</Label>
-                    <Label FontStyle="italic">Height:</Label>
-                    <Label Content="{Binding Path=Height}"></Label>
                     <Label FontStyle="italic">Width:</Label>
                     <Label Content="{Binding Path=Width}"></Label>
+                    <Label FontStyle="italic">Height:</Label>
+                    <Label Content="{Binding Path=Height}"></Label>
                     <Label FontWeight="Bold">Type</Label>
                     <Label Content="{Binding Path=Type}"></Label>
                 </StackPanel>
@@ -34,7 +34,7 @@
             <RowDefinition
 				Height="0.1*" />
         </Grid.RowDefinitions>
-        <ScrollViewer Grid.Row="0" >
+        <ScrollViewer Grid.Row="0" PreviewMouseWheel="UIElement_OnPreviewMouseWheel">
             <ListBox Name="ImageList" ItemTemplate="{StaticResource ListTemplate}">
             </ListBox>
         </ScrollViewer>

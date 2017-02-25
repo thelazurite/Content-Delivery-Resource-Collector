@@ -12,8 +12,8 @@ namespace WindowsResourcesCollector.Backend
 
         public double Width { get; }
 
-        public double ThumbHeight { get { return Height*0.25; } }
-        public double ThumbWidth { get { return Width*0.25; } }
+        public double ThumbHeight => Height*0.25;
+        public double ThumbWidth => Width*0.25;
         public Orientation ImageOrientation { get; }
 
         public ImageFormat Type { get; }

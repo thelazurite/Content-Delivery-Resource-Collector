@@ -10,3 +10,15 @@ C:\Users\dylanedd\Documents\SharpDevelop Projects\WindowsResourcesCollector\Wind
 C:\Users\dylanedd\Documents\SharpDevelop Projects\WindowsResourcesCollector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector_MarkupCompile.lref
 C:\Users\dylanedd\Documents\SharpDevelop Projects\WindowsResourcesCollector\WindowsResourcesCollector\obj\Debug\MainWindow.g.cs
 C:\Users\dylanedd\Documents\SharpDevelop Projects\WindowsResourcesCollector\WindowsResourcesCollector\obj\Debug\MainWindow.baml
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\bin\Debug\WindowsResourcesCollector.exe.config
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector.exe
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector.pdb
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\bin\Debug\WindowsResourcesCollector.exe
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\bin\Debug\WindowsResourcesCollector.pdb
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector.csprojResolveAssemblyReference.cache
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\MainWindow.g.cs
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\App.g.cs
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector_MarkupCompile.cache
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector_MarkupCompile.lref
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\MainWindow.baml
+C:\Users\dylanedd\Documents\GitHub\Content-Delivery-Resource-Collector\WindowsResourcesCollector\obj\Debug\WindowsResourcesCollector.g.resources

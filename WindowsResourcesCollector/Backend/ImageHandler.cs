@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,7 +7,6 @@ namespace WindowsResourcesCollector.Backend
 {
     internal static class ImageHandler
     {
-        public static string SearchLocation;
 
         private static readonly Dictionary<string, string> AcceptedHeaders = new Dictionary<string, string>
         {
@@ -19,10 +16,7 @@ namespace WindowsResourcesCollector.Backend
             {"89504E470D0A1A0A", "png"}
         };
 
-        public static List<ResourceHandler> RetrieveImages(string path)
-        {
-            return !Directory.Exists(path) ? null : (Directory.GetFiles(path)).Where(IsImage).Select(file => new ResourceHandler(file)).ToList();
-        }
+        public static List<ResourceHandler> RetrieveImages(string path)=>!Directory.Exists(path) ? null : (Directory.GetFiles(path)).Where(IsImage).Select(file => new ResourceHandler(file)).ToList();
 
         public static bool IsImage(string path)
         {

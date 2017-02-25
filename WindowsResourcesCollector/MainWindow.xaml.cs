@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Input;
 using WindowsResourcesCollector.Backend;
 
 using Orientation = WindowsResourcesCollector.Backend.Orientation;
@@ -49,13 +50,19 @@ namespace WindowsResourcesCollector
                     break;
             }
 
-            
             ImageList.DataContext = i > 0 ? Images.Where(val => val.ImageOrientation == filter) : Images;
                 var bind = new Binding();
                 ImageList.SetBinding(ItemsControl.ItemsSourceProperty, bind);
                 CountLabel.Content = i > 0 ? Images?.Count(val => val.ImageOrientation == filter) : Images?.Count;
             Console.WriteLine(i);
 
+        }
+
+        private void UIElement_OnPreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            var viewer = (ScrollViewer)sender;
+            viewer.ScrollToVerticalOffset(viewer.VerticalOffset - e.Delta);
+            e.Handled = true;
         }
     }
 }
