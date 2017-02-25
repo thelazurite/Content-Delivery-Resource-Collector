@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsResourcesCollector"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="ListTemplate">
+            <StackPanel Orientation="Vertical">
+                <Image Source="{Binding Path=ItemPath}"></Image>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Orientation:</Label>
+                    <Label Content="{Binding Path=Orientation}"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label FontWeight="Bold">Resolution</Label>
+                    <Label FontStyle="italic">Height:</Label>
+                    <Label Content="{Binding Path=Height}"></Label>
+                    <Label FontStyle="italic">Width:</Label>
+                    <Label Content="{Binding Path=Width}"></Label>
+                    <Label FontStyle="italic">Type:</Label>
+                    <Label Content="{Binding Path=Type}"></Label>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="0.9*" />
+			<RowDefinition
+				Height="0.1*" />
+		</Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0" >
+            <ListBox Name="ImageList" ItemTemplate="{StaticResource ListTemplate}">
+            </ListBox>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="2">
+            <Button Padding="2">Save _all images</Button>
+            <Button Padding="2">Save _image</Button>
+            <Button Padding="2">Set as _background</Button>
+        </StackPanel>
+    </Grid>
+</Window>
